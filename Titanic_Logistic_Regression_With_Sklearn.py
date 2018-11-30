@@ -6,9 +6,6 @@ from sklearn.preprocessing import MinMaxScaler
 import time
 import matplotlib.pyplot as plt
 
-# Turn off TensorFlow warning messages in program output
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
 # Load training data set from CSV file
 training_df_initial = pd.read_csv("train.csv")
 training_df_initial = training_df_initial.drop(training_df_initial.columns[[0,3,8]],axis=1)
